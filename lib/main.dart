@@ -21,10 +21,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'GitHub Daily',
         debugShowCheckedModeBanner: false,
-          theme: GlobalConfig.themeData,
-//        theme: ThemeData(
-//          primarySwatch: Colors.teal
-//        ),
+        theme: GlobalConfig.themeData,
         home: HomePage(),
         checkerboardOffscreenLayers: true,
       ),

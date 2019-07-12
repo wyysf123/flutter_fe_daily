@@ -1,16 +1,6 @@
-# flutter_shop
+# flutter_fe_daily
 
-A new Flutter application.
+使用Flutter 和 github trending 开发的一个方便前端每天查询，html,css,js,dart 在github上最新的信息。
 
-## Getting Started
+## 详细的可以看下源码
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
