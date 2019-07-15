@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'global_config.dart';
 import 'comm_page.dart';
 
-class IndexPage extends StatefulWidget {
-  IndexPage(this.title);
+class BeCategory extends StatefulWidget {
+  BeCategory(this.title);
   String title;
   @override
-  _IndexPageState createState() => _IndexPageState();
+  _BeCategoryState createState() => _BeCategoryState();
 }
 
-class _IndexPageState extends State<IndexPage> with SingleTickerProviderStateMixin {
+class _BeCategoryState extends State<BeCategory> with SingleTickerProviderStateMixin {
   AnimationController _controller;
   Widget tabbar(){
     double width = MediaQuery.of(context).size.width / 4;
@@ -20,19 +20,19 @@ class _IndexPageState extends State<IndexPage> with SingleTickerProviderStateMix
         labelPadding: EdgeInsets.only(right: 0,left: 0),
         tabs: [
           Container(
-            child: Tab(text: 'JavaScript'),
+            child: Tab(text: 'Java'),
             width: width,
           ),
           Container(
-            child: Tab(text: 'Dart'),
+            child: Tab(text: 'Python'),
             width: width,
           ),
           Container(
-            child: Tab(text: 'CSS'),
+            child: Tab(text: 'Go'),
             width: width,
           ),
           Container(
-            child: Tab(text: 'Swift'),
+            child: Tab(text: 'Rust'),
             width: width,
           )
         ]
@@ -50,7 +50,7 @@ class _IndexPageState extends State<IndexPage> with SingleTickerProviderStateMix
     _controller.dispose();
     super.dispose();
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -62,10 +62,10 @@ class _IndexPageState extends State<IndexPage> with SingleTickerProviderStateMix
           ),
           body: TabBarView(
               children: [
-                CommonPage('JavaScript'),
-                CommonPage('Dart'),
-                CommonPage('CSS'),
-                CommonPage('Swift')
+                CommonPage('Java'),
+                CommonPage('Python'),
+                CommonPage('Go'),
+                CommonPage('Rust')
               ]
           ),
         )
