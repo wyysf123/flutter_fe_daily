@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'comm_page.dart';
 import 'global_config.dart';
+import 'index_page.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -12,21 +13,21 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   //底部导航菜单
   final List<BottomNavigationBarItem> boottomTabs = [
     BottomNavigationBarItem(
-        icon: Icon(Icons.directions_car), title: Text('JavaScript')),
+        icon: Icon(Icons.directions_car), title: Text('前端')),
     BottomNavigationBarItem(
-        icon: Icon(Icons.directions_bike), title: Text('CSS')),
+        icon: Icon(Icons.directions_boat), title: Text('Java')),
     BottomNavigationBarItem(
-        icon: Icon(Icons.directions_run), title: Text('HTML')),
+        icon: Icon(Icons.directions_bus), title: Text('Python')),
     BottomNavigationBarItem(
-        icon: Icon(Icons.directions_subway), title: Text('dart')),
+        icon: Icon(Icons.directions_subway), title: Text('Rust')),
   ];
 
   //页面容器
   final List tabBodies = [
-    CommonPage('Javascript'),
-    CommonPage('css'),
-    CommonPage('html'),
-    CommonPage('dart')
+    IndexPage('前端'),
+    CommonPage('Java'),
+    CommonPage('Python'),
+    CommonPage('Rust')
   ];
 
   //声明当前索引和当前页面

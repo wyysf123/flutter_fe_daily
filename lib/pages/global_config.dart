@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class GlobalConfig {
   //页面背景颜色
+  static bool dark = true;
   static ThemeData themeData = new ThemeData.dark();
   static Color bgColor = Color.fromARGB(244, 245, 245, 1);
   static Color selectBottomColor = Colors.white;
